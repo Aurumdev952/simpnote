@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
-const url = 'http://localhost:8080/'
+const url = import.meta.env.VITE_BACKEND_URL
 
 function getToken() {
     const t = cookies.get("TOKEN")

@@ -1,9 +1,23 @@
 import { Link, NavLink, Outlet } from "react-router-dom"
 import { Notes, LayoutGrid, UserCircle } from 'tabler-icons-react'
 import { BiHomeAlt } from 'react-icons/bi'
-import { Suspense } from "react"
+import { Suspense, useEffect, useState } from "react"
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 const MainApp = () => {
+    const [isauth, setAuth] = useState(false)
+    useEffect(() => {
+        const t = cookies.get("TOKEN")
+        if (t) {
+            setAuth(true)
+        } else {
+            window.location.href = '/'
+        }
+    }, [])
+    if (!isauth) {
+        return null
+    }
     return (
         <div className="app">
             <nav>
