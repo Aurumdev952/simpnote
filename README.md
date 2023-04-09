@@ -20,7 +20,7 @@ Simp note is a note-taking project designed to make your note-taking experience 
 To start using Simp note, simply clone the repository to your local machine using the following command:
 
 ```bash
-git clone <https://github.com/your-username/simpnote.git>
+git clone https://github.com/Aurumdev952/simpnote.git
 ```
 
 Once you have cloned the repository, you can begin running the project. 
