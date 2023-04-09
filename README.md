@@ -1,10 +1,13 @@
-<div align="center">
-    <img src="./client/public/icon.svg" height="200">
-<div>
+<div align=center>
 
----
+<img src="./client/public/icon.svg" height="200">
 
 # Simp note
+#### taking notes made easy.
+
+</div>
+
+---
 
 Simp note is a note-taking project designed to make your note-taking experience simple and enjoyable. With Simp note, you can easily take, organize, and access notes from anywhere.
 
