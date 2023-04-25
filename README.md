@@ -3,7 +3,8 @@
 <img src="./client/public/icon.svg" height="200">
 
 # Simp note
-#### taking notes made easy.
+
+#### taking notes made easy
 
 </div>
 
@@ -26,7 +27,7 @@ To start using Simp note, simply clone the repository to your local machine usin
 git clone https://github.com/Aurumdev952/simpnote.git
 ```
 
-Once you have cloned the repository, you can begin running the project. 
+Once you have cloned the repository, you can begin running the project.
 
 To run the backend, run the following commands:
 
