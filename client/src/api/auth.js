@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
-
+const backend_url = import.meta.env.VITE_BACKEND_URL
 const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
@@ -11,7 +11,7 @@ const headers = {
 
 export async function AuthLogin(data) {
     try {
-        const r = await axios.post('http://localhost:8080/login', data, headers)
+        const r = await axios.post(backend_url + 'login', data, headers)
         if (r.status === 200) {
             const rdata = await r.data;
             console.log('data', rdata);
@@ -32,7 +32,7 @@ export async function AuthLogin(data) {
 }
 export async function AuthRegister(data) {
     try {
-        const r = await axios.post('http://localhost:8080/register', data, headers)
+        const r = await axios.post(backend_url + 'register', data, headers)
         if (r.status === 200) {
             const rdata = await r.data
             cookies.remove("TOKEN", { path: "/" });;
