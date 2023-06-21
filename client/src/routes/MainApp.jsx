@@ -30,8 +30,8 @@ const MainApp = () => {
                 <NavLink className={({ isActive }) => {return isActive ? 'nav-active' : 'nav-inactive'}} to='quickview'><LayoutGrid 
                 size='30px'/></NavLink>
 
-                <NavLink to='profile' className={({ isActive }) => {return isActive ? 'nav-active' : 'nav-inactive'}} ><UserCircle 
-                size='30px'/></NavLink>
+                {/* <NavLink to='profile' className={({ isActive }) => {return isActive ? 'nav-active' : 'nav-inactive'}} ><UserCircle 
+                size='30px'/></NavLink> */}
             </nav>
             <main>
                 <Suspense>
